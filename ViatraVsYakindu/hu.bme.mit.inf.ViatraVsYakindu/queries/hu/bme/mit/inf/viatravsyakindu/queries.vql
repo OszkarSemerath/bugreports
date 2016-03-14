@@ -11,7 +11,9 @@ pattern initialStates(s : State) {
 	Entry.outgoingTransitions.target(_,s);
 }
 
-/** */
+/**
+ * Problematic pattern, which queries xtext objects.
+ * */
 pattern variables(s : Statechart, v : VariableDefinition ) {
 	Statechart.scopes.declarations(s,v);
 	VariableDefinition(v);
