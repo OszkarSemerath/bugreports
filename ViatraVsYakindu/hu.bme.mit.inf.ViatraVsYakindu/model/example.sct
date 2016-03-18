@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sgraph="http://www.yakindu.org/sct/sgraph/2.0.0">
-  <sgraph:Statechart xmi:id="_puQTUOomEeW5BufMZxDlyw" specification="interface Buttons:&#xD;&#xA;in event x&#xD;&#xA;in event rossz&#xD;&#xA;var y: integer&#xD;&#xA;" name="example">
+  <sgraph:Statechart xmi:id="_puQTUOomEeW5BufMZxDlyw" specification="interface Buttons:&#xD;&#xA;in event a&#xD;&#xA;var b: integer&#xD;&#xA;" name="example">
     <regions xmi:id="_pu6aoOomEeW5BufMZxDlyw" name="main region">
       <vertices xsi:type="sgraph:Entry" xmi:id="_pvoMUOomEeW5BufMZxDlyw">
         <outgoingTransitions xmi:id="_pvzLcOomEeW5BufMZxDlyw" target="_pvrPoOomEeW5BufMZxDlyw"/>
       </vertices>
       <vertices xsi:type="sgraph:State" xmi:id="_pvrPoOomEeW5BufMZxDlyw" name="A" incomingTransitions="_zte8kOomEeW5BufMZxDlyw _pvzLcOomEeW5BufMZxDlyw">
-        <outgoingTransitions xmi:id="_tWiooOomEeW5BufMZxDlyw" specification="Buttons.x" target="_s8KZwOomEeW5BufMZxDlyw"/>
+        <outgoingTransitions xmi:id="_tWiooOomEeW5BufMZxDlyw" specification="Buttons.a" target="_s8KZwOomEeW5BufMZxDlyw"/>
       </vertices>
       <vertices xsi:type="sgraph:State" xmi:id="_s8KZwOomEeW5BufMZxDlyw" name="B" incomingTransitions="_tWiooOomEeW5BufMZxDlyw">
-        <outgoingTransitions xmi:id="_zte8kOomEeW5BufMZxDlyw" specification="Buttons.x" target="_pvrPoOomEeW5BufMZxDlyw"/>
+        <outgoingTransitions xmi:id="_zte8kOomEeW5BufMZxDlyw" specification="Buttons.a" target="_pvrPoOomEeW5BufMZxDlyw"/>
       </vertices>
     </regions>
   </sgraph:Statechart>
