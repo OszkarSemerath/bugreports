@@ -18,9 +18,9 @@ pattern v1(x : EventDefinition) {
 	EventDefinition(x);
 }
 
-pattern v2(x : FeatureCall, y: Expression) {
+pattern v2(x : FeatureCall, y) {
 	FeatureCall.feature(x, y);
 }
-pattern v3(x : ElementReferenceExpression, y: Expression) {
+pattern v3(x : ElementReferenceExpression, y) {
 	ElementReferenceExpression.reference(x, y);
 }
