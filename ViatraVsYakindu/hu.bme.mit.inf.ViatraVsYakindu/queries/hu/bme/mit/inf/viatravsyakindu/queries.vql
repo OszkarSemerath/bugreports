@@ -1,20 +1,26 @@
 package hu.bme.mit.inf.viatravsyakindu
 
-import epackage "http://www.yakindu.org/sct/sgraph/2.0.0"
 import epackage "http://www.yakindu.org/sct/statechart/SText"
+import epackage "http://www.yakindu.org/base/expressions/Expressions"
 
-/**
- * Pattern that selects the initial states.
- * It should work.
+/** 
+ * Returns events (in, out, internal) that are used in the model.
  */
-pattern initialStates(s : State) {
-	Entry.outgoingTransitions.target(_,s);
+pattern referredEvents(event : EventDefinition) {
+	FeatureCall.feature(_featureCall, event);
+	EventDefinition(event);
+} or {
+	ElementReferenceExpression.reference(_exp, event);
+	EventDefinition(event);
 }
 
-/**
- * Problematic pattern, which queries xtext objects.
- * */
-pattern variables(s : Statechart, v : VariableDefinition ) {
-	Statechart.scopes.declarations(s,v);
-	VariableDefinition(v);
+pattern v1(x : EventDefinition) {
+	EventDefinition(x);
+}
+
+pattern v2(x : FeatureCall, y: Expression) {
+	FeatureCall.feature(x, y);
+}
+pattern v3(x : ElementReferenceExpression, y: Expression) {
+	ElementReferenceExpression.reference(x, y);
 }
