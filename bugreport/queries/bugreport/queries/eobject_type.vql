@@ -1,0 +1,38 @@
+package bugreport.queries
+
+import epackage "examplePackage"
+//import epackage "http://www.eclipse.org/emf/2002/Ecore"
+
+///////
+
+// Common supertype of Model and RailwaySystem is EObject
+// Common supertype of EObject and Trackelement is TrackElement?
+pattern contains(a,b) {
+	Model.containsObjects(a,b);
+} or {
+	RailwaySystem.elements(a,b);
+}
+pattern transitiveContains(a,b) {
+	find contains+(a,b);
+}
+
+///////
+
+/*pattern equals(a,b) {
+	Switch(a);
+	a == b;
+} or {
+	SwitchState(a);
+	a == b;
+}
+
+pattern swithToRight(s) {
+	Switch.state(s,_);
+}
+
+pattern switchToRight2(s:Switch,right1,right2) {
+	Switch.state(s,right1);
+	find equals(right1,right2);
+	find equals(right2,_);
+}*/
+///////

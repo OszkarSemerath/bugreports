@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?eclipse version="3.0"?><!--
+--><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <!-- @generated metamodel -->
+    <package class="examplePackage.ExamplePackagePackage" genModel="model/metamodel.genmodel" uri="examplePackage"/>
+  </extension>
+  <extension id="bugreport.queries.Eobject_type" point="org.eclipse.viatra.query.runtime.queryspecification">
+    <group group="org.eclipse.viatra.query.runtime.extensibility.SingletonExtensionFactory:bugreport.queries.Eobject_type" id="bugreport.queries.Eobject_type">
+      <query-specification fqn="bugreport.queries.contains"/>
+    </group>
+  </extension>
+</plugin>
