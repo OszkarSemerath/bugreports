@@ -1,15 +1,12 @@
 package bugreport
 
 import examplePackage.ExamplePackagePackage
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
-import org.eclipse.emf.ecore.resource.ResourceSet
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import org.eclipse.emf.common.util.URI
-import bugreport.queries.SwithToRightMatcher
+import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import org.eclipse.viatra.query.runtime.api.ViatraQueryEngine
 import org.eclipse.viatra.query.runtime.emf.EMFScope
-import bugreport.queries.SwitchToRight2Matcher
 
 class Test {
 	def static void main(String[] args) {

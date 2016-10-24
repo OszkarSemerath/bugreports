@@ -12,8 +12,13 @@ pattern contains(a,b) {
 } or {
 	RailwaySystem.elements(a,b);
 }
-pattern transitiveContains(a,b) {
-	find contains+(a,b);
+//pattern transitiveContains(a,b) {
+//	find contains+(a,b);
+//}
+
+pattern containsSwitchPosition(a,b){
+	Model.containsObjects(a,b);
+	SwitchState(b);
 }
 
 ///////

@@ -7,6 +7,7 @@
   <extension id="bugreport.queries.Eobject_type" point="org.eclipse.viatra.query.runtime.queryspecification">
     <group group="org.eclipse.viatra.query.runtime.extensibility.SingletonExtensionFactory:bugreport.queries.Eobject_type" id="bugreport.queries.Eobject_type">
       <query-specification fqn="bugreport.queries.contains"/>
+      <query-specification fqn="bugreport.queries.containsSwitchPosition"/>
     </group>
   </extension>
 </plugin>
